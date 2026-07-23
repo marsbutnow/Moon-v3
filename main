@@ -11,7 +11,7 @@
         window.addEventListener('beforeunload', function (event) {
             event.preventDefault();
             event.returnValue = '';
-            return 'A teacher/admin is trying to close your tab.';
+            return 'Are you sure you want to leave? Any unsaved changes will be lost.';
         });
     </script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WX5VS54ZDW"></script>
@@ -689,7 +689,7 @@ footer {
         function checkPassword() {
             const input = document.getElementById('passwordInput').value;
             const error = document.getElementById('passwordError');
-            if (input === '0000') {
+            if (input === '1234') {
                 document.getElementById('passwordOverlay').style.opacity = '0';
                 setTimeout(() => {
                     document.getElementById('passwordOverlay').style.display = 'none';
@@ -738,7 +738,7 @@ footer {
                         document.getElementById('loadingScreen').style.opacity = '0';
                         setTimeout(() => {
                             document.getElementById('loadingScreen').style.display = 'none';
-                        }, 1000);
+                        }, 600);
                     }, 300);
                     return;
                 }
