@@ -11,7 +11,7 @@
         window.addEventListener('beforeunload', function (event) {
             event.preventDefault();
             event.returnValue = '';
-            return 'Are you sure you want to leave? Any unsaved changes will be lost.';
+            return 'A teacher/admin is trying to close your tab.';
         });
     </script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WX5VS54ZDW"></script>
